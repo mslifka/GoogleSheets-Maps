@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sheet2points</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">   
+    <meta charset="utf-8">
+	<title>DocsMap</title>
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="css/app.css"  media="all" rel="stylesheet" />
+    <style>
+      html, body, #map {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="//maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/require-2.1.14.min.js" data-main="js/"></script>
+    <script type="text/javascript" >
+        $(document).ready(function(){
+        	require(["app/app"], function(app) {
+        		app.init();	
+        	});
+        });
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
